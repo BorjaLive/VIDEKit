@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{349c9ce4-9649-4612-b55f-89570a7d9448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\src">
+      <UniqueIdentifier>{a803b7ee-5d13-4d0b-8d3c-862bb2605ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\header">
+      <UniqueIdentifier>{b1b494b5-9561-4567-b626-fe05eb4e5e41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\sfml">
+      <UniqueIdentifier>{a58d7294-2165-4797-8ded-17b3fd4afb06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{b648debc-5110-4dfa-9542-eb76dcb8b9db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Workspace">
+      <UniqueIdentifier>{2e8e0248-7e6b-4df4-98ac-9baf950eef9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\GUI">
+      <UniqueIdentifier>{274079f6-e6f5-4c2a-be61-0230089cabef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extra">
+      <UniqueIdentifier>{345eab9a-152b-404a-a4a4-9becb53a3df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extra\Shape">
+      <UniqueIdentifier>{ba9395ce-c949-44fd-8102-b692ef5f15b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{9dc714d6-79d4-49a4-90af-7ec66d34b5b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Extra\Shape\Polygon.cpp">
+      <Filter>Extra\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Extra\Shape\RoundedRectangleShape.cpp">
+      <Filter>Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="Extra\Shape\Line.cpp">
+      <Filter>Extra\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Extra\Shape\Rectangle.cpp">
+      <Filter>Extra\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Extra\Shape\Shader.cpp">
+      <Filter>Extra\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Extra\Shape\Shape.cpp">
+      <Filter>Extra\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Extra\Color.cpp">
+      <Filter>Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="Extra\PhysicalRope.cpp">
+      <Filter>Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="Extra\Transform.cpp">
+      <Filter>Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="Extra\Vector2D.cpp">
+      <Filter>Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\GUI\ButtonUI.cpp">
+      <Filter>Framework\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\GUI\GraphicsUI.cpp">
+      <Filter>Framework\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\GUI\ItemUI.cpp">
+      <Filter>Framework\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\GUI\LabelUI.cpp">
+      <Filter>Framework\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\GUI\TreeView.cpp">
+      <Filter>Framework\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\GUI\WindowUI.cpp">
+      <Filter>Framework\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Workspace\Camera.cpp">
+      <Filter>Framework\Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Workspace\Connection.cpp">
+      <Filter>Framework\Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Workspace\Node.cpp">
+      <Filter>Framework\Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Workspace\Scene.cpp">
+      <Filter>Framework\Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\GraphProcessing.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Variable.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\VIDECLexer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Window.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\sfml\imgui-SFML.cpp">
+      <Filter>imgui\sfml</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\imgui.cpp">
+      <Filter>imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\imgui_demo.cpp">
+      <Filter>imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\imgui_draw.cpp">
+      <Filter>imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\imgui_widgets.cpp">
+      <Filter>imgui\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="resource2.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Extra\Shape\Polygon.h">
+      <Filter>Extra\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Extra\Shape\RoundedRectangleShape.h">
+      <Filter>Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="Extra\Shape\Line.h">
+      <Filter>Extra\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Extra\Shape\Rectangle.h">
+      <Filter>Extra\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Extra\Shape\Shader.h">
+      <Filter>Extra\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Extra\Shape\Shape.h">
+      <Filter>Extra\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Extra\Color.h">
+      <Filter>Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="Extra\PhysicalRope.h">
+      <Filter>Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="Extra\Transform.h">
+      <Filter>Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="Extra\Utils.h">
+      <Filter>Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="Extra\Vector2D.h">
+      <Filter>Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GUI\ButtonUI.h">
+      <Filter>Framework\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GUI\GraphicsUI.h">
+      <Filter>Framework\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GUI\ItemUI.h">
+      <Filter>Framework\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GUI\LabelUI.h">
+      <Filter>Framework\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GUI\TreeView.h">
+      <Filter>Framework\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GUI\WindowUI.h">
+      <Filter>Framework\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Workspace\Camera.h">
+      <Filter>Framework\Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Workspace\Connection.h">
+      <Filter>Framework\Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Workspace\Node.h">
+      <Filter>Framework\Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Workspace\Scene.h">
+      <Filter>Framework\Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GraphProcessing.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Variable.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\VIDECLexer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Window.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\header\imconfig.h">
+      <Filter>imgui\header</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\header\imgui.h">
+      <Filter>imgui\header</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\header\imgui_internal.h">
+      <Filter>imgui\header</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\header\imstb_rectpack.h">
+      <Filter>imgui\header</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\header\imstb_textedit.h">
+      <Filter>imgui\header</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\header\imstb_truetype.h">
+      <Filter>imgui\header</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\sfml\imgui-SFML.h">
+      <Filter>imgui\sfml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader.frag">
+      <Filter>Extra</Filter>
+    </None>
+    <None Include="imgui.ini" />
+    <None Include="UserDefined.videc" />
+    <None Include="plugins\CodeBase.videc" />
+    <None Include="plugins\Integer.videc" />
+    <None Include="plugins\String.videc" />
+    <None Include="plugins\Float.videc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VIDEKit.rc">
+      <Filter>Archivos de recursos</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="videkit.ico">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

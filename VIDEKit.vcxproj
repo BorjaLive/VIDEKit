@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{8846F6FA-2E36-4F80-9334-5C81F5883987}</ProjectGuid>
+    <RootNamespace>VIDEKit</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Temis\Documents\Libs\SFML-2.5.1-x86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\Temis\Documents\Libs\SFML-2.5.1-x86\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Microsoft Visual Studio\Shared\Python36_64\include;C:\Users\Temis\Documents\Libs\boost_1_69_0;C:\Users\Temis\Documents\Libs\SFML-2.5.1-x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft Visual Studio\Shared\Python36_64\libs;C:\Users\Temis\Documents\Libs\boost_1_69_0\stage\lib;C:\Users\Temis\Documents\Libs\SFML-2.5.1-x64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>python36.lib;opengl32.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Temis\Documents\Libs\SFML-2.5.1-x86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Temis\Documents\Libs\SFML-2.5.1-x86\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)\ThirdParty\CPython API\include;C:\Users\Temis\Documents\Libs\boost_1_69_0;$(ProjectDir)\ThirdParty\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)\ThirdParty\CPython API\libs;C:\Users\Temis\Documents\Libs\boost_1_69_0\stage\lib;$(ProjectDir)ThirdParty\SFML\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Framework\GUI\ButtonUI.cpp" />
+    <ClCompile Include="Extra\Color.cpp" />
+    <ClCompile Include="Framework\Workspace\Connection.cpp" />
+    <ClCompile Include="Framework\GUI\GraphicsUI.cpp" />
+    <ClCompile Include="Framework\GraphProcessing.cpp" />
+    <ClCompile Include="imgui\sfml\imgui-SFML.cpp" />
+    <ClCompile Include="imgui\src\imgui.cpp" />
+    <ClCompile Include="imgui\src\imgui_demo.cpp" />
+    <ClCompile Include="imgui\src\imgui_draw.cpp" />
+    <ClCompile Include="imgui\src\imgui_widgets.cpp" />
+    <ClCompile Include="Framework\GUI\ItemUI.cpp" />
+    <ClCompile Include="Framework\GUI\LabelUI.cpp" />
+    <ClCompile Include="Extra\Shape\Line.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Framework\Workspace\Node.cpp" />
+    <ClCompile Include="Extra\PhysicalRope.cpp" />
+    <ClCompile Include="Extra\Shape\Polygon.cpp" />
+    <ClCompile Include="Extra\Shape\Rectangle.cpp" />
+    <ClCompile Include="Extra\Shape\RoundedRectangleShape.cpp" />
+    <ClCompile Include="Framework\Workspace\Scene.cpp" />
+    <ClCompile Include="Extra\Shape\Shader.cpp" />
+    <ClCompile Include="Extra\Shape\Shape.cpp" />
+    <ClCompile Include="Extra\Transform.cpp" />
+    <ClCompile Include="Framework\GUI\TreeView.cpp" />
+    <ClCompile Include="Framework\Variable.cpp" />
+    <ClCompile Include="Extra\Vector2D.cpp" />
+    <ClCompile Include="Framework\Workspace\Camera.cpp" />
+    <ClCompile Include="Framework\VIDECLexer.cpp" />
+    <ClCompile Include="Framework\Window.cpp" />
+    <ClCompile Include="Framework\GUI\WindowUI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Framework\GUI\ButtonUI.h" />
+    <ClInclude Include="Extra\Color.h" />
+    <ClInclude Include="Framework\Workspace\Connection.h" />
+    <ClInclude Include="Framework\GUI\GraphicsUI.h" />
+    <ClInclude Include="Framework\GraphProcessing.h" />
+    <ClInclude Include="imgui\header\imconfig.h" />
+    <ClInclude Include="imgui\sfml\imgui-SFML.h" />
+    <ClInclude Include="imgui\header\imgui.h" />
+    <ClInclude Include="imgui\header\imgui_internal.h" />
+    <ClInclude Include="imgui\header\imstb_rectpack.h" />
+    <ClInclude Include="imgui\header\imstb_textedit.h" />
+    <ClInclude Include="imgui\header\imstb_truetype.h" />
+    <ClInclude Include="Framework\GUI\ItemUI.h" />
+    <ClInclude Include="Framework\GUI\LabelUI.h" />
+    <ClInclude Include="Extra\Shape\Line.h" />
+    <ClInclude Include="Framework\Workspace\Node.h" />
+    <ClInclude Include="Extra\PhysicalRope.h" />
+    <ClInclude Include="Extra\Shape\Polygon.h" />
+    <ClInclude Include="Extra\Shape\Rectangle.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="resource2.h" />
+    <ClInclude Include="Extra\Shape\RoundedRectangleShape.h" />
+    <ClInclude Include="Framework\Workspace\Scene.h" />
+    <ClInclude Include="Extra\Shape\Shader.h" />
+    <ClInclude Include="Extra\Shape\Shape.h" />
+    <ClInclude Include="Extra\Transform.h" />
+    <ClInclude Include="Framework\GUI\TreeView.h" />
+    <ClInclude Include="Extra\Utils.h" />
+    <ClInclude Include="Framework\Variable.h" />
+    <ClInclude Include="Extra\Vector2D.h" />
+    <ClInclude Include="Framework\Workspace\Camera.h" />
+    <ClInclude Include="Framework\VIDECLexer.h" />
+    <ClInclude Include="Framework\Window.h" />
+    <ClInclude Include="Framework\GUI\WindowUI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgui.ini" />
+    <None Include="plugins\CodeBase.videc" />
+    <None Include="plugins\Float.videc" />
+    <None Include="plugins\Integer.videc" />
+    <None Include="plugins\String.videc" />
+    <None Include="Shader.frag" />
+    <None Include="UserDefined.videc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VIDEKit.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="videkit.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
