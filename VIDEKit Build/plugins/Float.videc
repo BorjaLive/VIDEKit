@@ -1,0 +1,103 @@
+//
+//	TODO:	Float.videc, file description of integer data-type graph behavior
+//
+
+
+BEGIN SECTION Float
+
+Add{
+	properties[
+		<type:string="operator">
+	]
+
+	inputs[
+		<A:integer=0>
+		<B:integer=0>
+	]
+
+	outputs[
+		<result:integer=0>
+	]
+}
+
+Subtract{
+	properties[
+		<type:string="operator">
+	]
+
+	inputs[
+		<A:integer=0>
+		<B:integer=0>
+	]
+
+	outputs[
+		<result:integer=0>
+	]
+}
+
+Multiply{
+	properties[
+		<type:string="operator">
+	]
+
+	inputs[
+		<A:integer=0>
+		<B:integer=0>
+	]
+
+	outputs[
+		<result:integer=0>
+	]
+}
+
+Divide{
+	properties[
+		<type:string="operator">
+	]
+
+	inputs[
+		<A:integer=0>
+		<B:integer=0>
+	]
+
+	outputs[
+		<result:float=0>
+	]
+}
+
+Greater{
+	properties[
+		<type:string="operator">
+	]
+
+	inputs[
+		<A:integer=0>
+		<B:integer=0>
+	]
+
+	outputs[
+		<result:boolean=false>
+	]
+
+}
+
+END
+
+BEGIN BEHAVIOR Float
+
+def Add(A,B):
+	return {'result':float(A)+float(B)}
+
+def Subtract(A,B):
+	return {'result':float(A)-float(B)}
+
+def Multiply(A,B):
+	return {'result':float(A)*float(B)}
+
+	def Divide(A,B):
+	return {'result':float(A)/float(B)}
+
+def Greater(A,B):
+	return {'result':float(A)>float(B)}
+
+END

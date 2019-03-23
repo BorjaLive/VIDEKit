@@ -1,0 +1,30 @@
+//
+//	TODO:	String.videc, file description of string data-type graph behavior
+//
+
+
+BEGIN SECTION String
+
+Add{
+	properties[
+		<type:string="operator">
+	]
+
+	inputs[
+		<A:string="">
+		<B:string="">
+	]
+
+	outputs[
+		<result:string="">
+	]
+}
+
+END
+
+BEGIN BEHAVIOR String
+
+def Add(A,B):
+	return {'result':str(A)+str(B)}
+
+END

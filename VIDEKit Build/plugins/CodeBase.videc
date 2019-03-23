@@ -1,0 +1,139 @@
+BEGIN DATA-TYPES
+
+<target:string="decimal";default:decimal=0.0;DColor:color=#65A014;pyclass:string="VIDEKitDecimal.py">
+<target:string="integer";default:integer=0;DColor:color=#14A074;pyclass:string="VIDEKitInteger.py">
+<target:string="string";default:string="";DColor:color=#C120A6;pyclass:string="VIDEKitString.py">
+<target:string="boolean";default:boolean=False;DColor:color=#C00000;pyclass:string="VIDEKitBoolean.py">
+<target:string="operator";default:string="undefined";DColor:color=#2067C1;pyclass:string="VIDEKitOperator.py">
+<target:string="function";default:string="undefined";DColor:color=#CCCCCC;pyclass:string="VIDEKitFunction.py">
+<target:string="event";default:string="undefined";DColor:color=#C12020;pyclass:string="VIDEKitFunction.py">
+<target:string="execution";default:string="undefined";DColor:color=#CCCCCC;pyclass:string="none">
+
+END
+
+//ENTRY POINT DEFINITION (onBegin)
+
+BEGIN SECTION Events
+onBegin{
+	properties[
+		<type:string="event">
+	]
+
+	inputs[
+	]
+
+	outputs[
+	]
+}
+END
+
+//CODE CONTROL
+
+BEGIN SECTION CodeControl
+
+If{
+	properties[
+		<type:string="function">
+	]
+
+	inputs[
+		<condition:boolean=False>
+	]
+
+	outputs[
+		<else:execution>
+	]
+}
+
+While{
+	properties[
+		<type:string="function">
+	]
+
+	inputs[
+		<condition:boolean=False>
+	]
+
+	outputs[
+		<iteration:execution>
+	]
+}
+
+For{
+	properties[
+		<type:string="function">
+	]
+
+	inputs[
+		<start:integer=0>
+		<end:integer=0>
+	]
+
+	outputs[
+		<index:integer=0>
+		<iteration:execution>
+	]
+}
+
+END
+
+BEGIN SECTION Console
+
+Print{
+	properties[
+		<type:string="function">
+	]
+
+	inputs[
+		<message:string="">
+	]
+
+	outputs[
+	]
+}
+
+Input{
+	properties[
+		<type:string="function">
+	]
+
+	inputs[
+	]
+
+	outputs[
+		<value:string="">
+	]
+}
+
+END
+
+BEGIN BEHAVIOR Events //DEFINE KEY BEHAVIORS
+
+def onBegin():
+	return
+
+END
+
+BEGIN BEHAVIOR CodeControl //DEFINE CODE CONTROL BEHAVIORS
+
+def If(condition):
+	return {'else':None}
+
+def While(condition):
+	return {'iteration':None}
+
+def For(start, end):
+	return {'index':start, 'iteration':None}
+
+END
+
+BEGIN BEHAVIOR Console
+
+def Print(message):
+	print(message)
+	return
+
+def Input():
+	return {'value':str(input())}
+
+END
