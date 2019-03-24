@@ -469,6 +469,20 @@ namespace VIDEKit {
 				}
 			}
 
+			if (mouseController.selectedNodeReference->getProperties().type == VIDEKit::Node::NodeType::NT_Constant) {
+
+				for (int i = 0; i < m_window->getVariables().size(); i++) {
+					if (m_window->getVariables()[i]->getName().compare(((VIDEKit::Variable*)mouseController.selectedNodeReference->extra)->getName()) == 0) {
+
+						m_window->getVariables().erase(m_window->getVariables().begin() + i);
+
+						break;
+
+					}
+				}
+
+			}
+			
 			m_nodes.erase(m_nodes.begin() + mouseController.selectionInfo.selectedNodeIndex);
 
 			mouseController.selectionInfo.selectedNodeIndex = -1;
